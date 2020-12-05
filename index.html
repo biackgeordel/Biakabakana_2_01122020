@@ -13,8 +13,8 @@
            
             <nav> <!-- menu contenant les ancres vers activites et heberggement-->
                 <ul>
-                    <li><a href="#hebergement">Hebergements</a></li>
-                    <li><a href="#">activités</a></li>
+                    <li><a href="#hebergement">Hébergements</a></li>
+                    <li><a href="#activite">Activités</a></li>
                     <li><a href="#">S'inscrire</a></li>
                 </ul>
 
@@ -22,7 +22,7 @@
 
         </header>
         <main>
-           <h1>Trouvez votre Hebergement pour des vacances de rêves</h1>
+           <h1>Trouvez votre Hébergement pour des vacances de rêves</h1>
            <p>En plein centre ville ou en pleine nature</p> 
             <nav><!--nav contenant  la barre de recherche-->
                 <form action="traitement.php" method="POST">
@@ -33,13 +33,13 @@
                          <button id="bouton_desktop">Rechercher</button>
                          <button id="bouton_mobile"><i class="fas fa-search"></i></button>
                      </div>
-
+                     
                     <div class="filtre"><!--mise en page du filtre -->
-                         <p>Filtres</p>
-                         <div><i class="fas fa-money-bill-wave"></i><p>Economiques</p></div>
-                         <div><i class="fas fa-child"></i><p>Familial</p></div>
-                        <div><i class="fas fa-heart"></i><p>Romantiques</p></div>
-                         <div><i class="fas fa-dog"></i><p>Animaux autorisés</p></div>
+                        <span>Filtres</span>
+                         <a href="#"><i class="fas fa-money-bill-wave"></i>Economiques</a>
+                         <a href="#"><i class="fas fa-child"></i>Familial</a>
+                        <a href="#"><i class="fas fa-heart"></i>Romantiques</a>
+                         <a href="#"><i class="fas fa-dog"></i>Animaux autorisés</a>
                     </div>
                     
                 </form>
@@ -135,9 +135,9 @@
                         </div>
                        
                        
-                                <!--parties contenant les logements les plus populaires-->
+                                <!--partie contenant les logements les plus populaires-->
                          <article>
-                            <h2>Les plus populaires</h2>
+                            <h2>Les plus populaires<span><i class="fas fa-chart-line"></i></span></h2>
                             <div class="photo_populaire">
                                 <a href="#">
                                      <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
@@ -183,7 +183,7 @@
 
                     </article>
                     <!--partie contenant  les activites -->
-                    <section>
+                    <section id="activite">
                             <h2>Activités  à Marseille</h2>
                             <div class="photo_activite">
                                 <a href="#">
