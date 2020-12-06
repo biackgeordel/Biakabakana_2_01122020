@@ -1,0 +1,84 @@
+
+/*image contenu dans la partie hebergement*/
+.photo_hebergement a img{
+    display: inline-block;
+    width:125px;
+    height:70px;
+    border-top-left-radius:20px;
+    border-top-right-radius:20px;
+    position:relative;
+    bottom: 17px;
+    left: 1px;
+
+}
+a{
+    text-decoration: none;
+}
+/*lien de la partie hebergement*/
+.photo_hebergement a{
+    text-decoration:none;
+}
+/*bloc contenant les photos d'hebergement*/
+.photo_hebergement{
+    display: flex;
+    flex-direction:column;
+    align-items:flex-start;
+    border-top-right-radius:20px;
+    border-top-left-radius: 20px;
+    padding-left: 2px;
+    text-align: left;
+    justify-content: center;
+    border:1px solid grey;
+    width: 130px;
+    height: 100px;
+    
+}
+/*image contenu dans la partie logements populaires*/
+.photo_populaire a img{
+    display:inline-block;
+    position: relative;
+    top:3px;
+    left:3px;
+    width: 200px;
+    height: 150px;
+    border-top-left-radius:20px;
+    border-bottom-left-radius:20px;
+
+}
+.photo_populaire{
+   
+    border-radius: 20px;
+    border:1px solid grey;
+    width: 450px;
+    height: 160px;
+
+}
+.photo_populaire a>div{
+    width: 200px;
+    height: 120px;
+    margin-left: 10px;
+    margin-top: 10px;
+    padding-top: 5px;
+    text-align:center;
+   
+}
+.photo_populaire a{
+display:flex;
+margin:2px;
+margin-top: 2px;
+
+}
+.bloc_photo{
+    border:1px solid red;
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    height: 400px;
+    width: 470px;
+    justify-content:space-around;
+
+}
+#bloc_page{
+    width:900px;
+    margin:auto;
+}
