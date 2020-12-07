@@ -2,7 +2,6 @@
     width:900px;
     margin:auto;
     font-family:"Raleway",sans-serif;
-    border:1px solid red;
     
 }
 @font-face{
@@ -49,6 +48,7 @@ border:1px solid #F2F2F2;
 border-radius:10px;
 
 
+
 }
 button{
     width:100px;
@@ -90,8 +90,16 @@ input:focus{
     border-radius:30px;
     padding-top:10px;
     text-align:right;
-    padding-right:20px;
+    padding-right:10px;
     
+}
+#dog+a{
+    width:130px;
+    padding-left:10px;
+}
+#child+a{
+    width:90px;
+    padding-right:10px;
 }
 .filtre{
     display:flex;
@@ -101,6 +109,12 @@ input:focus{
     height: 80px;
 
 }
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
 #money,#child,#heart,#dog{
     color:#0065FC;
     background-color:#DEEBFF;
@@ -114,6 +128,66 @@ input:focus{
     position: relative;
     border-radius:100px;
 
+}
+.bloc_regroup_hebergement{
+    display:flex; 
+    justify-content:space-between; 
+}
+.photo_hebergement a>img{
+    display:inline-block;
+    width:150px;
+    height: 80px;
+    border-top-left-radius:10px;
+    border-top-right-radius: 10px;
+    padding-top: 4px;
+}
+.photo_populaire a>img{
+    display:inline-block;
+    width:120px;
+    height: 80px;
+    float:left;
+}
+.photo_hebergement{
+    width:160px;
+    height: 145px;
+    background-color:white;
+    font-size:0.7em;
+    text-align: center;
+    margin:15px;
+    box-shadow:0px 0px 9px black;
+    border-radius:10px;
+
+}
+.photo_populaire{
+    background-color:white; 
+    font-size:0.7em;
+    width: 250px;
+    height: 100px;
+    border-radius:10px;
+    margin: auto;
+   
+
+}
+
+#article_hebergement{
+    border-radius:20px;
+    background-color:#F2F2F2;
+    width:580px;
+    display: flex;
+    flex-direction: column;
+}
+#article_populaire{
+    width:300px;
+    background-color:#F2F2F2;
+    border-radius:20px;
+    display: flex;
+    flex-direction: column;
+}
+.bloc_photo{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
 }
 
 
