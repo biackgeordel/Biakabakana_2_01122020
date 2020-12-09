@@ -10,7 +10,7 @@
         <div id="bloc_page"><!--Mise en page du site -->
         <header>
             <!--logo de Reservia-->
-            <p class="logo"> <img src="images/logo/Reservia.svg" alt="logo du site"/></p>
+            <div class="logo"> <img src="images/logo/Reservia.svg" alt="logo du site"/></div>
            
             <nav> <!-- menu contenant les ancres vers activites et heberggement-->
                 <ul>
@@ -29,22 +29,22 @@
                 <form action="#" method="">
                 
                     <div class="barre_de_recherche"><!-- mise en page de la recherche-->
-                         <i class="fas fa-map-marker-alt"></i>
                          <input type="text" placeholder="Marseille,france"/>
+                         <i class="fas fa-map-marker-alt"></i>
                          <button id="bouton_desktop">Rechercher</button>
                          <button id="bouton_mobile"><i class="fas fa-search"></i></button>
                      </div>
                      
-                    <div class="filtre"><!--mise en page du filtre -->
-                        <span>Filtres</span>
+                    <div class="filtre">
+                        <p>Filtres</p>
+                        <div class="categorie_filtre"><a href="#">Economique</a></div>
                         <i class="fas fa-money-bill-wave" id="money"></i>
-                         <a href="#">Economiques</a>
+                         <div class="categorie_filtre" ><a href="#">Familial</a></div>
                          <i class="fas fa-child" id="child"></i>
-                         <a href="#">Familial</a>
-                         <i class="fas fa-heart" id="heart"></i>
-                        <a href="#">Romantiques</a>
-                        <i class="fas fa-dog" id="dog"></i>
-                         <a href="#">Animaux autorisés</a>
+                         <div class="categorie_filtre"><a href="#">Romantique</a></div>
+                        <i class="fas fa-heart" id="heart"></i>
+                        <div class="categorie_filtre"><a href="#">Animaux autorisés</a></div>
+                         <i class="fas fa-dog" id="dog"></i>
                     </div>
                     
                 </form>
