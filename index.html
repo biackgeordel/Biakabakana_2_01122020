@@ -7,6 +7,7 @@
         <title>Reservia</title>
     </head>
     <body>
+        <div id="page_principal">
         <div id="bloc_page"><!--Mise en page du site -->
         <header>
             <!--logo de Reservia-->
@@ -51,7 +52,7 @@
             </nav><!--fin du nav conteneant la barre de recherche-->
                 <div>
                     
-                    <p><i class="fas fa-info-circle"></i>Plus de 500 logements sont disponible dans cette ville</p>
+                    <p><i class="fas fa-info-circle"></i>   Plus de 500 logements sont disponible dans cette ville</p>
                 </div>
                 <div class="bloc_regroup_hebergement">
                     
@@ -235,17 +236,17 @@
                         </div>
                         <!--debut group photo-->
                     <div class="photo_group_activite">
-                        <div class="photo_activite">
+                        <div class="photo_activite" id="bloc_dame" >
                             <a href="#">
                                 <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" 
-                                alt="notre dame de la garde"><br/>
+                                alt="notre dame de la garde" id="dame"><br/>
                                 <strong >Notre-dame-de-la-garde</strong>
                             </a>
                         </div>
-                        <div class="photo_activite">
+                        <div class="photo_activite" id="bloc_parc">
                             <a href="#">
                                 <img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
-                                 alt="parc longchamp"><br/>
+                                 alt="parc longchamp" id="parc"><br/>
                                 <strong >Parc longchamp</strong>
                             </a>
                         </div>
@@ -255,37 +256,33 @@
                 </section><!--fin section contenant les activités-->
         
         </main>
-
-        <footer>
+        </div>
+   
+            <footer>
                 <nav class="nav_footer">
                      <section>
-                          <h5>A props</h5>
-                          <ul>
-                                <li>Fonctionnement du site</li>
-                                <li>Conditions générales de vente</li>
-                                <li>Données et confidentialité</li>
-                          </ul>
+                          <h4>A propos</h4>
+                          <p><a href="#">Fonctionnement du site</a></p>
+                          <p><a href="#">Conditions générales de vente</a></p>
+                          <p><a href="#">Données et confidentialité</a></p>
+                          
                     </section>
                     <section>
-                        <h5>Nos hébergement</h5>
-                        <ul>
-                            <li>Charte de qualité</li>
-                            <li>Soumettre votre hôtel</li>
-                        </ul>
+                        <h4>Nos hébergement</h4>
+                            <p><a href="#">Charte de qualité</a></p>
+                            <p><a href="#">Soumettre votre hôtel</a></p>
+                           
+                        
                     </section>
                     <section>
-                        <h5>Assistance</h5>
-                        <ul>
-                            <li>Centre d'aide</li>
-                            <li>Nous contacter</li>
-                        </ul>
+                        <h4>Assistance</h4>
+                        <p><a href="#">Centre d'aide</a></p>
+                        <p><a href="#">Nous contacter</a></p>
                     </section>
-
-
-
-
                 </nav>
-        </footer>
+         </footer>
         </div>
+        
+       
     </body>
 </html>
