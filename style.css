@@ -6,6 +6,73 @@
    /* border: 1px solid red;*/
        
 }
+.menu_header>div{
+    text-align: center;
+    width:150px;
+    height:50px;
+}
+.menu_header>div>a{
+    display: inline-block;
+    padding-top:20px;
+   
+}
+.menu_header>div>a:hover{
+    border-top:2px solid #0065FC;
+}
+.logo{
+    width:200px;
+    height:50px;
+    text-align: center;
+}
+.menu_header{
+    display: flex;
+    justify-content: space-around;
+   
+}
+header>nav{
+    display:flex;
+    justify-content:space-between;
+    height:100px;
+    align-items: center;
+    
+}
+header>nav>.menu_header>div:nth-last-child(1)>a{
+    color:#0065FC;
+   
+}
+
+header>nav>div:nth-last-child(2){
+    text-align:left;
+    width:150px;
+   
+}
+
+header>nav>.menu_header>div:nth-last-child(1){
+    font-weight: bold;
+    text-align:right;
+    width:100px;
+    
+}
+.etoile_populaire>i:nth-last-child(1){
+    color:#968c8c;
+}
+.etoile_populaire1>i:nth-last-child(1){
+    color:#968c8c;
+
+}
+.etoile_hebergement>i:nth-last-child(1){
+    color:#968c8c;
+}
+.etoile_hebergement2>i:nth-last-child(1){
+    color:#968c8c;
+}
+.etoile_hebergement1>i:nth-last-child(1){
+    color:#968c8c;
+}
+.etoile_hebergement1>i:nth-last-child(2){
+    color:#968c8c;
+}
+
 strong{
     font-family:"RalewayBold",sans-serif;
 }
@@ -51,41 +118,14 @@ article>a{
    font-family:"RalewayBold";
     src:url('polices/Raleway-ExtraBold.ttf');
 }
-li{
-    list-style: none;
-}
 
-nav>ul>li:nth-child(3)>a{
-    font-weight:bold;
-    color:#0065FC;
-}
+
+
 a{
     text-decoration: none;
     color:black;  
 }
 
-li>a:hover{
-  
-    color:#0065FC;
-    border-top: 2px solid #0065FC;
-    padding-top: 20px;
-}
-header nav>ul>li{
-    display: inline-block;
-    margin-right: 10px;
-
-}
-header{
-    display: flex;
-    justify-content:space-between;
-    align-items: flex-end;
-    height:100px;
-}
-
-
-header div{ 
-    height: 50px;
-}
 
 input::placeholder{
     color:black;
@@ -400,6 +440,49 @@ footer{
 }
 section>p{
     font-size: 0.8em;
+}
+@media all and (max-width:1024px){
+    header{
+        max-height:40%;
+        
+    }
+    #bloc_page{
+        max-width:40%;
+        border:1px solid red;
+    }
+    header>nav>div{
+        justify-content:space-between;
+        align-items: flex-start; 
+    }
+    header>nav{
+        flex-direction: column;
+        
+        align-items: flex-start;
+    }
+    .menu_header{
+        width:100%;
+        justify-content:space-between;
+        align-items:flex-start;
+    }
+    header>nav>.menu_header>div:nth-last-child(1){
+    position:relative;
+    bottom:50px;
+    right:20px;
+    text-align:center;
+    width:120px;
+    }
+    
+   
+
+    .menu_header>div>a:hover{
+        border-bottom:2px solid #0065FC;
+        border-top:none;
+    }
+    .menu_header>div>a{
+        padding-bottom:10px;
+        width:120px;
+       
+    }
 }
 
 
