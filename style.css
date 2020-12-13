@@ -447,103 +447,40 @@ section>p{
 }
 
 @media all and (max-device-width:1024px){
-    .logo>img{
-    display: inline-block;
-    width: 90px;
-    height:50px;
-    padding-left:30px;
    
-    }
-
-    
-    .menu_header>div>a{
-        width:90%;
-        height:50%;
-       /* padding-bottom:10px;*/
-        text-align:left;
-        padding-top:10px;
-        padding-bottom:10px;
-    }
-    .menu_header>div:nth-last-child(1){
-        position:relative;
-        bottom:50px;
-        right:70px;
-    }
-    .menu_header>div:nth-last-child(2)>a{
-        margin-left:40px;
-        text-align:right;
-    }
-    
-    header>nav{
-    flex-direction: column;
-    justify-content:center;
-    align-items: flex-start;
-
-    }
-    .menu_header{
-        width:90%;
-        height:60%;
-        justify-content:space-evenly;
-        align-items: flex-end;
-    }
     #bloc_page{
-        width:900px;
+        width:950px;
         margin:0px;
-        
+         
+        display:flex;
+        justify-content:start;
+        align-items: flex-start;
       
     }
     #page_principal{
-        width:900px;
-        margin:auto;
-        border:1px solid black;
-    }
-    .bloc_regroup_hebergement{
-        width:auto;
-        height:auto;
-        margin:0px;
-        flex-direction: column-reverse;
-    }
-    .bloc_photo{   
-        margin:0px;
-        flex-direction: column;
-    }
-    #article_hebergement{
-        width:auto;
-        height:auto;
-        margin:0px; 
-    }
-    #article_populaire{
-        width:auto;
-        height:auto;
+        width:950px;
         margin:0px;
     }
-    .group_photo_activite{
-        width:auto;
-        height:auto;
-        flex-direction: column;
-        margin:0px;
-    }
-  footer>nav{
-      flex-direction: row;
-  }
+   
   h3{
-      font-size:2em;
-      width:480px;
-      height: 70px;
-      margin: auto;
-      text-align: center;     
+      font-size:3em;
+      width:70%;
+      height: 30%;
+      margin-top:10%;
+      text-align: center; 
+       
   }
   h3+p{
     
     margin-top:20px;
     width:auto;
     text-align:center;
-    font-size:1.4em;
+    font-size:2em;
   }
   #bouton_mobile{
       display: inline-block;
-      width:70px;
-      height:70px;
+      width:93px;
+      height:93px;
       font-size:1.3em;
       border-radius:19px;
       position:relative;
@@ -551,20 +488,20 @@ section>p{
       right:40px;
   }
   input::placeholder{
-      font-size:1.4em;
+      font-size:2em;
   }
   #marker_desktop{
     display:none;
   }
   #marker_mobile{
       display:inline-block;
-      width:50px;
-      height: 42px;
-      font-size:1.3em;
+      width:40px;
+      height: 60px;
+      font-size:2em;
       background-color: #F2F2F2;
-      padding-top: 20px;
-      padding-left:25px;
-      left:77px;
+      padding-top: 25px;
+      padding-left:30px;
+      left:70px;
       position: relative;
       border-top-left-radius:20px;
       border-bottom-left-radius: 20px;
@@ -581,90 +518,13 @@ section>p{
   }
 
   .barre_de_recherche>input{
-      width:450px;
-      height:60px;
+      width:500px;
+      height:80px;
      border-radius:20px;
       
   }
-  .filtre{
-    height:260px;
-    width:500px;
-    margin:auto;
-    flex-direction:column;
-    justify-content:space-between;
-    flex-wrap: wrap;
-    align-content:flex-start;
-    align-items:flex-start;
-    font-size: 1.6em;
-  }
-  #money,#child,#heart,#dog{
-    font-size:0.9em;
-    height:40px;
-    width: 50px;
-    padding-top:13px;
-    text-align: center;
-  }
-}
-.filtre p{
-    order:1;
-}
-
-  .filtre .categorie_filtre:nth-child(2){
-    width:180px;
-    height:50px;
-    order:3;
   
-}
-
-
-.filtre .categorie_filtre:nth-child(4){
-   width:120px;
-   height:50px;
-   order:5;
-   position:relative;
-   top:70px;
-}
-.filtre .categorie_filtre:nth-child(6){
-    width:170px;
-    height:50px;
-    order:4;
-    
-
- }
- .filtre .categorie_filtre:nth-child(8){
-    width:207px;
-    height:50px;
-    order:4; 
-    padding-right:27px;
-   
-   
- }
-#money{
-    position:relative;
-    order:6;
-    right:255px;
-    top:6px;
-}
-#child{
-    position:relative;
-    order:9;
-    top:70px;
-    right:140px;
-}
-#dog{
-    position:relative;
-    order:8;
-    right:255px;
-    bottom:2px;
-}
-#heart{
-    position:relative;
-    order:7;
-    right:255px;
-    top:3px;
-
-}
-
+ 
 
 
 
