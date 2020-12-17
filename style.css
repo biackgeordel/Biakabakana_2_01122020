@@ -152,7 +152,7 @@ input[type="text"]{
     display:none;
 }/*debut section filtre*/
 
-.filtre p{
+.filtre >div>p{
     font-size:0.8em;
     font-weight: bold;
     margin-right:20px;
@@ -161,42 +161,53 @@ input[type="text"]{
 .filtre{
    display:flex;
    flex-direction:row;
-   justify-content:start;
-   align-items: center;
+   align-items:center;
    flex-wrap: wrap;
-   height: 80px;
+   height: 55px;
    border:1px solid red;
 }
+.filtre_icone{
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    height: 25px;
+    border:1px solid red;
+
+}
+
 .categorie_filtre{
-    width:140px;
-    height:28px;
-    border:2px solid #F2F2F2;
     font-size: 0.7em;
-    text-align:right;
-    border-radius: 20px;
+    border-radius: 20px; 
 }
+/*dimensions des liens dans les filtre*/
 .categorie_filtre>a{
-    display: inline-block;
-    padding-top:8px;
-    padding-right: 10px;
-    font-weight: bolder;
-}
- .filtre .categorie_filtre:nth-child(2){
-    width:110px;
-
-}
-
-.filtre .categorie_filtre:nth-child(4){
-   width:90px;
-}
-.filtre .categorie_filtre:nth-child(6){
-    width:110px;
-
- }
- .filtre .categorie_filtre:nth-child(8){
+    display:inline-block;
     width:140px;
+    height:30px;
+    padding-right:15px;
+    font-weight: bolder;
+    text-align:right;
+    padding-top:8px;
+    border-radius: 20px; 
+    border:2px solid #F2F2F2;  
+}
+.filtre>div:nth-child(2)>a{
+    width:120px;
+}
+.filtre>div:nth-child(3)>a{
+    width:90px;
+    margin-left:15px;
+}
+.filtre>div:nth-child(4)>a{
+    width:110px;
+    margin-left:15px;
+}
+.filtre>div:nth-child(5)>a{
+    width:130px;
+    margin-left:15px;
+  
+}
 
- }
 
 #money,#child,#heart,#dog{
     color:#0065FC;
@@ -209,22 +220,6 @@ input[type="text"]{
     text-align: center;
     border-radius: 100px;   
    
-}
-#money{
-    position:relative;
-    right:115px;
-}
-#child{
-    position:relative;
-    right:100px;
-}
-#dog{
-    position:relative;
-    right:145px;
-}
-#heart{
-    position:relative;
-    right:120px;
 }
 /*fin section filtre*/
 
