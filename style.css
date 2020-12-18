@@ -32,12 +32,18 @@ h2{
 a{
     text-decoration: none;
     color:black;  
+   
 }
+h3+p{
+    font-size:0.8em;
+    position:relative;
+    bottom:10px;
+}
+
 /*logo du site*/
 .logo{
     width:200px;
     height:50px;
-    
 }
 
 .menu_header>div{
@@ -54,6 +60,7 @@ a{
 .menu_header>div>a{
     display: inline-block;
     padding-top:30px;
+    font-size:0.8em;
 
 }
 .menu_header>div:nth-child(1)>a{
@@ -98,12 +105,12 @@ header>nav>.menu_header>div:nth-last-child(1){
     
 }
 
-
 input::placeholder{
     color:black;
     font-family: 'Raleway',sans-serif;
     font-weight: bold;
-    padding-right:30px;
+    font-size:0.8em;
+    padding-right:80px;
 }
 input[type="text"]{
     outline: none;
@@ -117,18 +124,20 @@ input[type="text"]{
     box-shadow:1px 1px 5px black;
 }
 
-  button{
-        width:90px;
+  #bouton_desktop{
+        width:85px;
         outline: none;
         font-family:"Raleway",sans-serif;
-        height:40px;
+        height:42px;
+        font-size:0.7em;
         color:white;
         background-color:#0065FC;
         border:none;
         border-top-right-radius:10px;
         border-bottom-right-radius:10px;
-        position:relative;
-        right:100px;
+        position: relative;
+        right:127px;
+         
       }
 
     #bouton_mobile{
@@ -136,22 +145,25 @@ input[type="text"]{
     }
       /*font awesome de la barre de recherche*/
     #marker_desktop{
-        min-width:30px;
-        min-height: 24px;
+        width:25px;
+        height: 30px;
         background-color: #F2F2F2;
-        padding-top: 14px;
-        padding-left:20px;
+        padding-top: 8px;
+        padding-left:12px;
         position: relative;
-        right:260px;
-        top:4px;
+        right:265px;
+        bottom:1.8px;
         border-top-left-radius:10px;
         border-bottom-left-radius: 10px;
     }
  
 #marker_mobile{
     display:none;
-}/*debut section filtre*/
+}
 
+
+
+/*debut section filtre*/
 .filtre >div>p{
     font-size:0.8em;
     font-weight: bold;
@@ -163,39 +175,52 @@ input[type="text"]{
    flex-direction:row;
    align-items:center;
    flex-wrap: wrap;
-   height: 55px;
-   border:1px solid red;
+  /* height: 40px;*/
+   margin-top:30px;
+ 
 }
-.filtre_icone{
-    display:flex;
-    flex-direction:row;
-    align-items: center;
-    height: 25px;
-    border:1px solid red;
-
+form{
+    margin-bottom:30px;
+}
+form>p{
+   
+    font-size:0.8em;
+}
+/*insertion du logo info*/
+form>p::before{
+    content:url("images/logo/info.png");
+    display: inline-block;
+    position:relative;
+    top:10px;
 }
 
 .categorie_filtre{
     font-size: 0.7em;
     border-radius: 20px; 
 }
+.categorie_filtre>a:hover{
+    background-color:#DEEBFF;
+    color:white;
+    text-shadow:1px 1px 5px black;
+
+}
 /*dimensions des liens dans les filtre*/
 .categorie_filtre>a{
     display:inline-block;
     width:140px;
-    height:30px;
+    height:25px;
     padding-right:15px;
     font-weight: bolder;
     text-align:right;
-    padding-top:8px;
+    padding-top:10px;
     border-radius: 20px; 
-    border:2px solid #F2F2F2;  
+    border:2px solid #F2F2F2;
 }
 .filtre>div:nth-child(2)>a{
-    width:120px;
+    width:110px;
 }
 .filtre>div:nth-child(3)>a{
-    width:90px;
+    width:85px;
     margin-left:15px;
 }
 .filtre>div:nth-child(4)>a{
@@ -203,24 +228,41 @@ input[type="text"]{
     margin-left:15px;
 }
 .filtre>div:nth-child(5)>a{
-    width:130px;
+    width:140px;
     margin-left:15px;
   
 }
 
-
 #money,#child,#heart,#dog{
     color:#0065FC;
    background-color:#DEEBFF;
-    font-size:0.6em;
-    height: 20px;
-    width: 30px;
+    font-size:0.7em;
+    height: 25px;
+    width: 35px;
     padding-top:10px;
     padding-left: 0px;
     text-align: center;
     border-radius: 100px;   
    
 }
+#money{
+    position:relative;
+    right:565px;
+   
+}
+#child{
+    position:relative;
+    right:458px;
+}
+#heart{
+    position:relative;
+    right:371px;
+}
+#dog{
+    position:relative;
+    right:264px;
+}
+
 /*fin section filtre*/
 
 #article_hebergement{
@@ -466,6 +508,7 @@ section>p{
     font-size: 0.8em;
 }
 
+
 @media all and (max-device-width:1024px){
    
     #bloc_page{
@@ -578,12 +621,6 @@ section>p{
       border-bottom-left-radius: 20px;
   }
  
-  .barre_de_recherche{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    
-  }
   #bouton_desktop{
       display:none;
   }
