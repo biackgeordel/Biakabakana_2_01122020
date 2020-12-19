@@ -34,7 +34,7 @@ a{
     color:black;  
    
 }
-h3+p{
+h2+p{
     font-size:0.8em;
     position:relative;
     bottom:10px;
@@ -109,12 +109,12 @@ input::placeholder{
     color:black;
     font-family: 'Raleway',sans-serif;
     font-weight: bold;
-    font-size:0.8em;
-    padding-right:80px;
+    font-size:0.9em;
+    padding-right:85px;
 }
 input[type="text"]{
     outline: none;
-    width:250px;
+    width:270px;
     height:35px;
     text-align:center;
     border:2.5px solid #F2F2F2;
@@ -136,7 +136,9 @@ input[type="text"]{
         border-top-right-radius:10px;
         border-bottom-right-radius:10px;
         position: relative;
-        right:127px;
+        right:130px;
+        bottom:0.9px;
+      
          
       }
 
@@ -151,7 +153,7 @@ input[type="text"]{
         padding-top: 8px;
         padding-left:12px;
         position: relative;
-        right:265px;
+        right:282px;
         bottom:1.8px;
         border-top-left-radius:10px;
         border-bottom-left-radius: 10px;
@@ -199,9 +201,9 @@ form>p::before{
     border-radius: 20px; 
 }
 .categorie_filtre>a:hover{
+    box-shadow:1px 1px 4px grey;
     background-color:#DEEBFF;
-    color:white;
-    text-shadow:1px 1px 5px black;
+    border:2px solid #DEEBFF;
 
 }
 /*dimensions des liens dans les filtre*/
@@ -247,12 +249,12 @@ form>p::before{
 }
 #money{
     position:relative;
-    right:565px;
+    right:564px;
    
 }
 #child{
     position:relative;
-    right:458px;
+    right:455px;
 }
 #heart{
     position:relative;
@@ -260,7 +262,7 @@ form>p::before{
 }
 #dog{
     position:relative;
-    right:264px;
+    right:262px;
 }
 
 /*fin section filtre*/
@@ -271,21 +273,21 @@ form>p::before{
     width:580px;
     display: flex;
     flex-direction: column;
-}
+}/*balise contenant les noms et prix des hebergements à marseille*/
 .photo_hebergement>a>strong,.photo_hebergement>a>span{
     display:inline-block;
     padding-top:2px;
     text-align: left;
-    padding-left:2px;
+    padding-left:10px;
     width:150px;
 }
-
+/*bloc contenant l'article hebergement àmarseille et populaires*/
 .bloc_regroup_hebergement{
     display:flex; 
     justify-content:space-between; 
     height:450px;
 }
-
+/*bloc contenant les photos à Marseille*/
 .bloc_photo{
     display:flex;
     flex-wrap: wrap;
@@ -308,7 +310,7 @@ form>p::before{
     background-color:white;
     font-size:0.7em;
     text-align: center;
-    margin:15px;
+    margin:13px;
     box-shadow:0px 0px 8px black;
     border-radius:10px;
 
@@ -330,23 +332,29 @@ form>p::before{
 .etoile_hebergement1>span>i:nth-last-child(2){
     color:#968c8c;
 }
-
-article>h2,article>a{
+/*balise h2 au dessus d'hebergement de marseille et populaires*/
+article>h2{
     padding-left:20px;
-}
+    position:relative;
+    top:10px;
+}   
+/*lien au dessous des hebergement de marseille*/
 article>a{
     font-size:0.8em;
     margin-top:10px;
     font-weight:bold;
+    padding-left:20px;
+    padding-top:5px;
 }
 
-
+/*h2 au dessus de populaire*/
 #article_populaire>h2{
     display: flex;
     justify-content:space-around;
-    padding-left:0px;
+   padding-left:0px;
   
 }
+/*etoile contenu dans populaire*/
 .photo_populaire>a>div>i{
     color:#0065FC;
 }
@@ -361,38 +369,40 @@ article>a{
 .photo_populaire a>img{
     display:inline-block;
     width:110px;
+    height: 90px;
     border-top-left-radius:10px;
     border-bottom-left-radius:10px;
-   /* border:1px solid red;*/
-    height: 90px;
-    margin-top:5px;
-    margin-right:5px;
-}
-.photo_populaire>a{
-    /*border:1px solid blue;*/
-    justify-content: space-around;
-    align-content: center;
-    display: flex;
-    width: 250px;
-    height: 100px;
-
+    margin-left:4px;
+    margin-right:10px;
 
 }
-
+/*balise div contenant les noms et prix des plus populaires*/
 .photo_populaire>a>div{
     width:110px;
     text-align:left;
-}
-
-.photo_populaire{
-    background-color:white; 
     font-size:0.7em;
+    height: 100px;
+}
+.photo_populaire>a>div>p{
+    padding-bottom:14px;
+}
+/*lien contenu dans les balises phot_populaires*/
+.photo_populaire>a{
+    justify-content:left;
+    align-items: center;
+    display: flex;
     width: 250px;
     height: 100px;
     border-radius:10px;
+    margin-bottom:8px;
+    background-color:white; 
     box-shadow: 0px 0px 8px black;
-   margin:auto;
-   
+
+
+}
+
+.photo_populaire{
+   margin:auto;  
 
 }
 
@@ -414,6 +424,7 @@ article>a{
 #activite{
     display: flex;
     flex-direction: column;
+    margin-top:30px;
 
 }
 .photo_activite{
@@ -424,16 +435,12 @@ article>a{
     border-radius: 20px;
     border-left:none;
     border-right: none;
-    /*border:1px solid green;*/
     box-shadow:0.5px 0.5px 10px rgb(167, 158, 158);
-   
-  
-   /* border-bottom-left-radius:20px;
-    border-bottom-right-radius: 20px;*/
 }
 .group_photo_activite{
     display: flex;
     justify-content: space-between;
+   
 }
 .photo_group_activite>div>a>img{
     width:200px;
@@ -442,7 +449,7 @@ article>a{
 .photo_group_activite>div{
     width:200px;
     height:150px;
-    /*border:1px solid black;*/
+    
 }
 .photo_group_activite{
     display:flex;
@@ -450,7 +457,11 @@ article>a{
     justify-content:space-between;
     height:300px;
     width:200px;
-    /*border:1px solid black;*/
+}
+/*balise strong contenant les noms des activités*/
+.photo_activite>a>strong{
+    display:inline-block;
+    margin-top:10px;
 }
 
 
@@ -638,81 +649,8 @@ section>p{
       height:300px;
       margin: auto;
   }
-  #money,#child,#heart,#dog{
-    color:#0065FC;
-   background-color:#DEEBFF;
-    font-size:1.3em;
-    width:60px;
-    height:45px;
-    padding-top:20px;
-    padding-left:0px;  
-   
-}
-.filtre .categorie_filtre:nth-child(2){
-    width:220px;
-}
 
-.filtre .categorie_filtre:nth-child(4){
-   width:150px;
-   padding-right:5px;
-   position:relative;
-   right:10px;
-   
-}
-.filtre .categorie_filtre:nth-child(6){
-    width:210px;
-    position:relative;
-    top:15px;
-    left:210px;
- }
- .filtre .categorie_filtre:nth-child(8){
-    width:280px;
-    position:relative;
-    top:10px;
-    left:180px;
-   
- }
- .categorie_filtre{
-    width:240px;
-    height:60px;
-    border-radius:30px;
-    border:3px solid #F2F2F2;
-    font-size: 1.5em;
-    text-align:right;
- }
- .filtre p{
-    font-size:1.5em;
-    font-weight: bold;
-    margin-right:20px;
-}
-#money{
-    position:relative;
-    bottom:65px;
-    right:80px;
-}
-#child{
-    position:relative;
-    top:208px;
-    right:452px;
-}
-#dog{
-    position:relative;
-    top:206px;
-    right:225px;
-}
-#heart{
-    position:relative;
-    bottom:50px;
-    left:135px;
-}
-div>p{
-    font-size:1.5em;
-    text-align: left;
-}
-nav+div{
-    padding-left:150px;
-    margin: auto;
-}
+
 .bloc_photo{
     flex-direction:column;
     width: auto;
@@ -737,14 +675,7 @@ nav+div{
     height:auto;
     border-radius:0px;
 }
-.photo_populaire{
-    background-color:white; 
-    font-size:0.7em;
-    height: 250px;
-    width:700px;
-    margin-bottom:50px;
-    border-radius:20px;
-}
+
 .photo_populaire a>img{
     width:250px;
     height:220px;
@@ -760,8 +691,8 @@ nav+div{
     text-align:left;
 }
 .photo_populaire>a{
+    height:300px;
     width:700px;
-    height:220px;
 }
 
 #article_populaire>h2{
