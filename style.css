@@ -165,24 +165,70 @@ input[type="text"]{
 
 
 
-/*debut section filtre*/
+/*bloc div contenant tous les filtres  */
+.filtre{
+    display:flex;
+    height:50px;
+    align-items:center;
+    margin-top:20px;
+}
+/*paragraphe contenant le mot filtre*/
 .filtre >div>p{
     font-size:0.8em;
     font-weight: bold;
     margin-right:20px;
 }
-    
-.filtre{
-   display:flex;
-   flex-direction:row;
-   align-items:center;
-   flex-wrap: wrap;
-  /* height: 40px;*/
-   margin-top:30px;
- 
+/*style appliqué aux filtres*/
+.categorie_filtre{
+    border:1.8px solid #F2F2F2;
+    width:150px;
+    height:34px;
+    margin-right:15px;
+    border-radius:20px;
 }
+/*lien contenu dans les filtres*/
+.categorie_filtre>a{
+    font-size:0.7em;
+    display: inline-block;
+    font-weight:bold;
+}/*balise span contenant les noms des filtres*/
+.categorie_filtre>a>span:nth-child(2){
+    margin-left:6px;
+    position:relative;
+    bottom:2.4px;
+
+
+}
+/*taille du filtre economique */
+.categorie_filtre:nth-child(2){
+    width:130px;
+}
+/*taille du filtre familial*/
+.categorie_filtre:nth-child(3){
+    width:100px;
+}
+/*taille du filtre romantique*/
+.categorie_filtre:nth-child(4){
+    width:120px;
+}
+/*style appliqué aux icônes contenus dans les filtres*/
+#money,#child,#heart,#dog{
+    color:#0065FC;
+   background-color:#DEEBFF;
+    font-size:1.2em;
+    height: 24px;
+    width: 35px;
+    padding-top:11px;
+    padding-left: 0px;
+    text-align: center;
+    border-radius: 100px;
+    position:relative;
+    right:2px;
+    bottom:1px;  
+}
+
 form{
-    margin-bottom:30px;
+    margin-bottom:20px;
 }
 form>p{
    
@@ -196,76 +242,6 @@ form>p::before{
     top:10px;
 }
 
-.categorie_filtre{
-    font-size: 0.7em;
-    border-radius: 20px; 
-}
-.categorie_filtre>a:hover{
-    box-shadow:1px 1px 4px grey;
-    background-color:#DEEBFF;
-    border:2px solid #DEEBFF;
-
-}
-/*dimensions des liens dans les filtre*/
-.categorie_filtre>a{
-    display:inline-block;
-    width:140px;
-    height:25px;
-    padding-right:15px;
-    font-weight: bolder;
-    text-align:right;
-    padding-top:10px;
-    border-radius: 20px; 
-    border:2px solid #F2F2F2;
-}
-.filtre>div:nth-child(2)>a{
-    width:110px;
-}
-.filtre>div:nth-child(3)>a{
-    width:85px;
-    margin-left:15px;
-}
-.filtre>div:nth-child(4)>a{
-    width:110px;
-    margin-left:15px;
-}
-.filtre>div:nth-child(5)>a{
-    width:140px;
-    margin-left:15px;
-  
-}
-
-#money,#child,#heart,#dog{
-    color:#0065FC;
-   background-color:#DEEBFF;
-    font-size:0.7em;
-    height: 25px;
-    width: 35px;
-    padding-top:10px;
-    padding-left: 0px;
-    text-align: center;
-    border-radius: 100px;   
-   
-}
-#money{
-    position:relative;
-    right:564px;
-   
-}
-#child{
-    position:relative;
-    right:455px;
-}
-#heart{
-    position:relative;
-    right:371px;
-}
-#dog{
-    position:relative;
-    right:262px;
-}
-
-/*fin section filtre*/
 
 #article_hebergement{
     border-radius:20px;
@@ -273,7 +249,8 @@ form>p::before{
     width:580px;
     display: flex;
     flex-direction: column;
-}/*balise contenant les noms et prix des hebergements à marseille*/
+}
+/*balise contenant les noms et prix des hebergements à marseille*/
 .photo_hebergement>a>strong,.photo_hebergement>a>span{
     display:inline-block;
     padding-top:2px;
@@ -346,6 +323,10 @@ article>a{
     padding-left:20px;
     padding-top:5px;
 }
+.photo_populaire{
+    margin:auto;  
+ 
+ }
 
 /*h2 au dessus de populaire*/
 #article_populaire>h2{
@@ -398,11 +379,6 @@ article>a{
     background-color:white; 
     box-shadow: 0px 0px 8px black;
 
-
-}
-
-.photo_populaire{
-   margin:auto;  
 
 }
 
@@ -522,13 +498,12 @@ section>p{
 
 @media all and (max-device-width:1024px){
     #bloc_page{
-    width:auto;
+    width:950px;
     margin-left:0px;
     }
 
     #page_principal{
     margin:0px;
-    border:1px solid green;
     }
     h2{
         font-size:2em;
@@ -613,6 +588,7 @@ main>h2{
     text-align:center;
     position:relative;
     right:33px;
+    top:10px;
     width:450px;
     margin:auto;
    
@@ -620,14 +596,20 @@ main>h2{
 main>h2+p{
     height:50px;
     position:relative;
-    bottom:35px;
+    bottom:20px;
     right:25px;
     font-size:1.4em;
     text-align:center;
 }
 .barre_de_recherche{
-    border:1px solid red;
+    display: flex;
+    /*border:1px solid red;*/
+    justify-content: center;
+    align-items: center;
     height:70px;
+    position:relative;
+    bottom:20px;
+    
 }
 #bouton_desktop{
     display:none;
@@ -636,19 +618,165 @@ main>h2+p{
     display: inline-block;
     outline:none;
     border: none;
-    width:50px;
-    height:50px;
-    border-radius:10px;
+    width:70px;
+    font-size:1.2em;
+    height:70px;
+    position:relative;
+    right:82px;
+    bottom:1px;
+    border-radius:20px;
     background-color:#0065FC;
     color:white;
-    
-
+}
+#marker_desktop{
+    width:40px;
+    height:48px;
+    font-size:1.5em;
+    padding-top: 18px;
+    right:357px;
+    bottom:1px;
+    padding-left:25px;
+    border-top-left-radius:20px;
+    border-bottom-left-radius:20px;
 }
 .barre_de_recherche>input{
-    width:300px;
-    height:50px;
-
+    width:400px;
+    position:relative;
+    left:50px;
+    height:60px;
+    border-radius:20px;
+}
+input::placeholder{
+    font-size:1.5em;
+    padding-right:90px;
 
 }
+
+.filtre>div>p{
+    font-size:1.2em;
+    position:relative;
+    left:10px;
+}
+.filtre{
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    height:230px;
+    margin:auto;
+    width:450px;
+}
+.categorie_filtre{
+    width:230px;
+    height:45px;
+    font-size:1.5em;
+    border-radius:30px;
+}
+/*new taille du filtre economique */
+.categorie_filtre:nth-child(2){
+    width:190px;
+   
+}
+/*new taille du filtre familial*/
+.categorie_filtre:nth-child(3){
+    width:140px;
+    align-self:flex-end;
+    position:relative;
+    bottom:50px;
+    right:80px;
+}
+/* new taille du filtre romantique*/
+.categorie_filtre:nth-child(4){
+    width:180px;
+    position:relative;
+    bottom:35px;
+} 
+.categorie_filtre:nth-child(5){
+    position:relative;
+    bottom:20px;
+} 
+/* nouveau style appliqué aux icônes contenus dans les filtres*/
+#money,#child,#heart,#dog{
+    font-size:1.2em;
+    height: 35px;
+    width: 50px;
+    padding-top:13px;
+    padding-left: 0px;  
+   
+}
+form>p{
+    font-size:1.3em;
+    height:55px;
+    width:460px;
+    margin: auto;
+}
+form>p>span{
+    position: relative;
+    left:32px;
+}
+.bloc_regroup_hebergement{
+    display:flex; 
+    flex-direction: column-reverse;
+    margin:auto;
+    height:auto;
+    justify-content:center; 
+  
+}
+#article_hebergement{
+    background-color:#F2F2F2;
+    width:auto;
+    display: flex;
+    flex-direction: column;
+}
+.bloc_photo{
+    display:flex;
+    flex-direction: column;
+}
+
+#article_populaire{
+    width:auto;
+    height:auto;
+    border-radius: 0px; 
+}
+.photo_populaire>a{
+    justify-content:left;
+    width: 800px;
+    height: 350px;
+    margin-top:30px;
+    border-radius:40px;
+}
+.photo_populaire a>img{
+    display:inline-block;
+    width:400px;
+    height: 330px;
+    border-top-left-radius:40px;
+    border-bottom-left-radius:40px;
+    margin-left:9.5px;
+    margin-right:20px;
+
+}
+.photo_populaire>a>div{
+    width:350px;
+    font-size:1.6em;
+    height: 320px;
+}
+.photo_populaire>a>div>p{
+    padding-bottom:130px;
+}
+#article_populaire>div:nth-child(2)>a>div>p{
+    padding-bottom:160px;
+}
+#article_populaire>div:nth-child(4)>a>div>p{
+    padding-bottom:160px;
+}
+
+
+
+
+
+
+
+
+
+
 }
 
