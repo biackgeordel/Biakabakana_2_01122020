@@ -171,6 +171,7 @@ input[type="text"]{
     height:50px;
     align-items:center;
     margin-top:20px;
+  
 }
 /*paragraphe contenant le mot filtre*/
 .filtre >div>p{
@@ -497,9 +498,8 @@ section>p{
     font-size: 0.8em;
 }
 
-
 @media all and (max-width:1024px){
-   
+ 
     #bloc_page{
     width:950px;
     margin-left:0px;
@@ -657,43 +657,46 @@ input::placeholder{
 }
 
 .filtre>div>p{
-    font-size:1.2em;
+    font-size:1.5em;
     position:relative;
     left:10px;
 }
 .filtre{
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: flex-start;
-    height:230px;
-    margin:auto;
-    width:450px;
+    height:400px;
+    margin-left:200px;
+    width:700px;
 }
 .categorie_filtre{
-    width:230px;
-    height:45px;
-    font-size:1.5em;
-    border-radius:30px;
-    flex-grow:10;
+    border:3px solid #F2F2F2;
+    width:300px;
+    height:70px;
+    font-size:2em;
+   /* border:1px solid #707070;*/
+    border-radius:40px;
 }
 /*new taille du filtre economique */
 .categorie_filtre:nth-child(2){
-    width:190px;
+    width:250px;
+   
    
 }
 /*new taille du filtre familial*/
 .categorie_filtre:nth-child(3){
-    width:140px;
+    width:195px;
     align-self:flex-end;
     position:relative;
-    bottom:50px;
-    right:80px;
+    bottom:80px;
+    right:185px;
 }
 /* new taille du filtre romantique*/
 .categorie_filtre:nth-child(4){
-    width:180px;
+    width:230px;
     position:relative;
-    bottom:35px;
+    bottom:50px;
+    
 } 
 .categorie_filtre:nth-child(5){
     position:relative;
@@ -701,11 +704,13 @@ input::placeholder{
 } 
 /* nouveau style appliqué aux icônes contenus dans les filtres*/
 #money,#child,#heart,#dog{
-    font-size:1.2em;
-    height: 35px;
-    width: 50px;
-    padding-top:13px;
-    padding-left: 0px;  
+    font-size:1.3em;
+    height: 56px;
+    width: 71px;
+    padding-top:15px;
+    padding-left: 0px; 
+    right:3px;
+  
    
 }
 form>p{
