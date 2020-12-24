@@ -498,7 +498,8 @@ section>p{
 }
 
 
-@media all and (max-device-width:1024px){
+@media all and (max-width:1024px){
+   
     #bloc_page{
     width:950px;
     margin-left:0px;
@@ -513,6 +514,7 @@ section>p{
 
     header{
         margin-top:20px;
+      
     }
     .logo{
         position:relative;
@@ -547,9 +549,9 @@ header>nav{
 }
 /*dimensions des div et liens contenu dans le menu header*/
 .menu_header>div:nth-child(1),.menu_header>div:nth-child(1)>a{
-    width:480px;
+    width:450px;
     position:relative;
-    right:5px;
+    /*right:5px;*/
 }
 .menu_header>div:nth-child(1)>a:defined{
     border-bottom:4px solid #0065FC;
@@ -562,7 +564,7 @@ header>nav{
 }
 
 .menu_header>div:nth-child(2),.menu_header>div:nth-child(2)>a{
-    width:480px;
+    width:450px;
     height:50px;
     text-align:center; 
 }
@@ -672,6 +674,7 @@ input::placeholder{
     height:45px;
     font-size:1.5em;
     border-radius:30px;
+    flex-grow:10;
 }
 /*new taille du filtre economique */
 .categorie_filtre:nth-child(2){
