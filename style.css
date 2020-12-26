@@ -502,93 +502,50 @@ section>p{
 }
 
 @media all and (max-device-width:1024px){
- 
+
     #bloc_page{
-    max-width:950px;
-    margin-left:0px;
-    zoom:1.5;
+    width:950px;
     }
-
     #page_principal{
-    margin:0px;
+       
+        margin:0px;  
     }
-    h2{
-        font-size:2em;
-    }
-
+   
     header{
         margin-top:20px;
-      
+        border:1px solid yellow;
     }
+
     .logo{
         position:relative;
-        left:75px;
-        width:200px;
-        height:70px; 
+        left:7px;
+        width:300px;
+        height:80px;
     }
     
     .logo>img{
-        width:200px;
-        height:70px;
+        width:300px;
+        height:80px;
     }
 /*bloc nav header avec une bordure grey en bas*/
 header>nav{
     border-bottom: 4px solid #F2F2F2;
     flex-direction: column;
-    height:141px;
+    height:auto;
+    width: auto;
     justify-content: flex-start;
     align-items: flex-start;
+    border:1px solid red; 
 }
 .menu_header{
-   /* border:1px solid green;*/
-   width:950px;
-   justify-content:start;
-   margin-top:20px;
-}
-/*taille de la police des lien dans le menu header*/
-.menu_header>div>a{
-    font-size:1.8em;
-    padding-top:0px;
-    margin:0px;
-}
-/*dimensions des div et liens contenu dans le menu header*/
-.menu_header>div:nth-child(1),.menu_header>div:nth-child(1)>a{
-    width:450px;
-    position:relative;
-    /*right:5px;*/
-}
-.menu_header>div:nth-child(1)>a:defined{
-    border-bottom:4px solid #0065FC;
-    border-top:none;
-    
-}
-.menu_header>div>a:hover{
-    border-top:none;
-    color:orange;
+   border:1px solid blue; 
+   width:100%;
+   height:80px;
 }
 
-.menu_header>div:nth-child(2),.menu_header>div:nth-child(2)>a{
-    width:450px;
-    height:50px;
-    text-align:center; 
-}
-.menu_header>div:nth-child(2){
-    padding-right:0px;
-}
-.menu_header>div:nth-child(3),.menu_header>div:nth-child(3)>a{
-    width:200px;
-    height:50px;
-    text-align: center;
-}
-.menu_header>div:nth-child(3){
-    position:relative;
-    bottom:75px;
-    right:300px;
-    text-align: center;
-}.menu_header>div:nth-child(3)>a{
-   padding-top:10px;
-   
-}
+/*dimensions des div et liens contenu dans le menu header*/
+
+
 /*titre principale du site*/
 main>h2{
     height:100px;
