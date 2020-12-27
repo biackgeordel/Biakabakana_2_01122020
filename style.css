@@ -31,8 +31,7 @@ h2{
 }
 a{
     text-decoration: none;
-    color:black;  
-   
+    color:black;   
 }
 h2+p{
     font-size:0.8em;
@@ -40,69 +39,69 @@ h2+p{
     bottom:10px;
 }
 
-/*logo du site*/
+/*balise div contenant le logo du site*/
 .logo{
     width:200px;
     height:50px;
 }
 
-.menu_header>div{
-    width:150px;
-    height:50px;
-}
-
-
-.menu_header>div:nth-child(2){
-    width:100px;
-   text-align:right;
-    padding-right:25px;
-}
-.menu_header>div>a{
-    display: inline-block;
-    padding-top:30px;
-    font-size:0.8em;
-
-}
-.menu_header>div:nth-child(1)>a{
+/*balise div contenant le lien hebergement*/
+.menu_header>div:nth-child(1){
     text-align: center;
     width:150px;
     height:50px;
 }
 
+/*balise div contenant le lien activités*/
+.menu_header>div:nth-child(2){
+    width:100px;
+    height:50px;
+    text-align:center;
+   
+}
+/*balise div contenant le lien s'inscrire*/
+.menu_header>div:nth-last-child(1){
+    font-weight: bold;
+    text-align:center;
+    width:100px;
+    height:50px;
+    
+}
 
-.menu_header>div>a:hover{
+/*les liens contenu dans le bloc menu_header*/
+.menu_header>div>a{
+    display: inline-block;
+    padding-top:30px;
+    font-size:0.8em;
+}
+
+.menu_header>div:hover{
     border-top:2px solid #0065FC;
     color:#0065FC;
 }
-.menu_header>div:nth-child(1)>a:defined{
-    border-top:2px solid #0065FC;
+.menu_header>div>a:hover{
     color:#0065FC;
 }
 
 
 .menu_header{
-    display: flex;
+    display:flex;
     justify-content:start;
     height:100px;
    
 }
+
+/*balise nav contenant les div du menu au haut du site*/
 header>nav{
     display:flex;
     justify-content:space-between;
     height:100px;
     align-items: center;
     
-}
-header>nav>.menu_header>div:nth-last-child(1)>a{
+}/*couleur bleue sur le lien  inscrire*/
+.menu_header>div:nth-child(3)>a{
     color:#0065FC;
    
-}
-
-header>nav>.menu_header>div:nth-last-child(1){
-    font-weight: bold;
-    text-align:right;
-    width:100px;
-    
 }
 
 input::placeholder{
@@ -159,12 +158,6 @@ input[type="text"]{
         border-bottom-left-radius: 10px;
     }
  
-#marker_mobile{
-    display:none;
-}
-
-
-
 /*bloc div contenant tous les filtres  */
 .filtre{
     display:flex;
@@ -227,7 +220,7 @@ input[type="text"]{
     right:2px;
     bottom:1px;  
 }
-
+/*le formulaire contenant la barre de recherche*/
 form{
     margin-bottom:20px;
 }
@@ -327,6 +320,7 @@ article>a{
     padding-left:20px;
     padding-top:5px;
 }
+/*espace en les balises div  contenant les logement pooulaires*/
 .photo_populaire{
     margin:auto;  
  }
@@ -510,10 +504,11 @@ section>p{
        
         margin:0px;  
     }
-   
+    h2{
+        font-size:2.2em;
+    }
     header{
         margin-top:20px;
-        border:1px solid yellow;
     }
 
     .logo{
@@ -535,35 +530,46 @@ header>nav{
     width: auto;
     justify-content: flex-start;
     align-items: flex-start;
-    border:1px solid red; 
+}
+.menu_header>div>a{
+    font-size:1.8em;
 }
 .menu_header{
-   border:1px solid blue; 
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
    width:100%;
    height:80px;
 }
-
-/*dimensions des div et liens contenu dans le menu header*/
-
-
+.menu_header>div:nth-child(1),.menu_header>div:nth-child(2){
+    width:470px;
+    height:80px;
+}
+.menu_header>div>a{
+    padding-top:20px;
+}
+.menu_header>div:nth-last-child(1){
+    position:relative;
+    width:300px;
+    height:80px;
+    bottom:80px;
+    right:300px;
+}
 /*titre principale du site*/
 main>h2{
     height:100px;
     padding-top:30px;
     text-align:center;
     position:relative;
-    right:33px;
     top:10px;
-    width:450px;
+    width:700px;
     margin:auto;
-   
-}/*paragraph au dessous du titre*/
+   }
+/*paragraph au dessous du titre*/
 main>h2+p{
     height:50px;
     position:relative;
-    bottom:20px;
-    right:25px;
-    font-size:1.4em;
+    bottom:15px;
+    font-size:1.8em;
     text-align:center;
 }
 .barre_de_recherche{
@@ -571,7 +577,7 @@ main>h2+p{
     /*border:1px solid red;*/
     justify-content: center;
     align-items: center;
-    height:70px;
+    height:80px;
     position:relative;
     bottom:20px;
     
@@ -583,102 +589,107 @@ main>h2+p{
     display: inline-block;
     outline:none;
     border: none;
-    width:70px;
-    font-size:1.2em;
-    height:70px;
+    width:78px;
+    font-size:1.8em;
+    height:78px;
     position:relative;
     right:82px;
     bottom:1px;
-    border-radius:20px;
+    border-radius:25px;
     background-color:#0065FC;
     color:white;
 }
 #marker_desktop{
-    width:40px;
-    height:48px;
-    font-size:1.5em;
-    padding-top: 18px;
-    right:357px;
+    width:50px;
+    height:55px;
+    font-size:1.8em;
+    padding-top: 20px;
+    right:550px;
     bottom:1px;
     padding-left:25px;
-    border-top-left-radius:20px;
-    border-bottom-left-radius:20px;
+    border-top-left-radius:25px;
+    border-bottom-left-radius:25px;
 }
 .barre_de_recherche>input{
-    width:400px;
+    width:600px;
     position:relative;
-    left:50px;
-    height:60px;
-    border-radius:20px;
+    left:60px;
+   /* border:1px solid grey;*/
+    height:70px;
+    border-radius:25px;
 }
 input::placeholder{
-    font-size:1.5em;
-    padding-right:90px;
+    font-size:2em;
+    padding-right:160px;
 
 }
 
 .filtre>div>p{
-    font-size:1.5em;
+    font-size:1.8em;
     position:relative;
-    left:10px;
+    left:50px;
 }
 .filtre{
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    height:400px;
-    margin-left:200px;
-    width:700px;
+    width:730px;
+    height:450px;
+    margin: auto;
 }
 .categorie_filtre{
     border:3px solid #F2F2F2;
-    width:300px;
-    height:70px;
-    font-size:2em;
-   /* border:1px solid #707070;*/
-    border-radius:40px;
+    width:350px;
+    height:150px;
+    font-size:2.2em;
+   /*border:1px solid #707070;*/
+    border-radius:50px;
 }
 /*new taille du filtre economique */
 .categorie_filtre:nth-child(2){
-    width:250px;
+    width:300px;
+    position:relative;
+    left:50px;
    
    
 }
 /*new taille du filtre familial*/
 .categorie_filtre:nth-child(3){
-    width:195px;
+    width:250px;
     align-self:flex-end;
     position:relative;
-    bottom:80px;
-    right:185px;
+    bottom:93px;
+    right:30px;
 }
 /* new taille du filtre romantique*/
 .categorie_filtre:nth-child(4){
-    width:230px;
+    width:280px;
     position:relative;
     bottom:50px;
+    left:50px;
     
 } 
 .categorie_filtre:nth-child(5){
     position:relative;
     bottom:20px;
+    left:50px;
 } 
 /* nouveau style appliqué aux icônes contenus dans les filtres*/
 #money,#child,#heart,#dog{
-    font-size:1.3em;
-    height: 56px;
-    width: 71px;
-    padding-top:15px;
+    font-size:1.4em;
+    height: 65px;
+    width: 90px;
+    padding-top:20px;
     padding-left: 0px; 
-    right:3px;
-  
-   
+    right:1px;
+    top:0.1px;
 }
 form>p{
-    font-size:1.3em;
-    height:55px;
-    width:460px;
+    font-size:1.8em;
+    height:100px;
+    width:600px;
     margin: auto;
+    padding-top:50px;
 }
 form>p>span{
     position: relative;
@@ -725,8 +736,6 @@ form>p>span{
     padding-top:8px;
     padding-left:30px;
 }
-
-
 #article_populaire{
     width:auto;
     height:auto;
@@ -747,7 +756,6 @@ form>p>span{
     border-bottom-left-radius:40px;
     margin-left:9.5px;
     margin-right:40px;
-
 }
 .photo_populaire>a>div{
     width:300px;
@@ -760,10 +768,8 @@ form>p>span{
 .photo_populaire>a>div>p>strong{
     display:inline-block;
     position:relative;
-    bottom:10px;
-   
+    bottom:10px;   
 }
-
 /*bloc contenant les images et noms*/
 .photo_activite{
     height:380px;
