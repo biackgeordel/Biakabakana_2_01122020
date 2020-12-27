@@ -38,6 +38,9 @@ h2+p{
     position:relative;
     bottom:10px;
 }
+a>strong{
+    padding-left:10px;
+}
 
 /*balise div contenant le logo du site*/
 .logo{
@@ -466,9 +469,7 @@ article>a{
 #dame{
     height:92px;
 }
-a>strong{
-    padding-left:10px;
-}
+
 footer>nav{
     background-color:#F2F2F2;
     display: flex;
@@ -476,7 +477,6 @@ footer>nav{
 
 }
 nav>section{
-    /*border:1px solid green;*/
     width:300px;
 }
 nav>section:nth-child(1){
@@ -780,44 +780,49 @@ form>p>span{
 }
 /*bloc contenant les images et noms*/
 .photo_activite{
-    height:380px;
-    width:800px;    
+    width:800px !important;
+    height:380px !important;
+    margin-top:50px!important;
+    border-radius:40px;
+    
+    box-shadow:1px 1px 10px rgb(167, 158, 158);
 }
 .photo_activite>a>img{
-    width:780px;
-    height:220px;
+    width:800px !important;
+    height:280px !important;
+    
 }
+/*balise contenant les noms des activités*/
 .photo_activite>a>strong{
    font-size:1.8em;
+   margin-top:30px;
+   margin-left:20px;
+   
+   
 }
-
 /*bloc contenant toutes les activités*/
 .group_photo_activite{
     flex-direction: column;
     margin:auto;
 }
-.photo_group_activite>div>a>img{
-    width:780px;
-    height:220px;
-    
-}
-.photo_group_activite>div{
-    width:800px;
-    height:380px;
-      
-}
 .photo_group_activite{
     width:auto;
     height:auto;
 }
+footer{
+    margin-top:100px;
+}
+footer>nav{
+    flex-direction: column;
+    justify-content:flex-start;
 
-#bloc_dame,#bloc_parc,#parc,#dame{
-    height:380px;
 }
-/*nouvelle taille du bloc div contenant l'image*/
-.photo_group_activite>div:nth-child(2){
-    height:380px;  
+nav>section{
+    width:80% !important;
+    font-size:1.8em;
+    margin:auto !important;
 }
+
 }
 
 
