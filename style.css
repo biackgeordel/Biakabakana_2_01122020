@@ -328,7 +328,7 @@ article>a{
 }
 /*espace en les balises div  contenant les logement pooulaires*/
 .photo_populaire{
-    margin:auto;  
+    margin:auto; 
  }
 
 /*h2 au dessus de populaire*/
@@ -382,8 +382,6 @@ article>a{
     margin-bottom:8px;
     background-color:white; 
     box-shadow: 0px 0px 8px black;
-
-
 }
 
 #article_populaire{
@@ -504,8 +502,7 @@ section>p{
     width:950px;
     }
     #page_principal{
-       
-        margin:0px;  
+       margin:0px; 
     }
     h2{
         font-size:2.4em;
@@ -717,6 +714,7 @@ form>p>span{
     width:auto;
     display: flex;
     flex-direction: column;
+    margin-top:100px;
 }
 .bloc_photo{
     display:flex;
@@ -744,16 +742,37 @@ form>p>span{
     padding-top:8px;
     padding-left:30px;
 }
+/*lien au dessous des hebergement de marseille*/
+article>a{
+    font-size:1.8em;
+    padding-left:80px;
+    padding-top:10px;
+}
+#article_hebergement>h2{
+    padding-left:80px;
+    padding-bottom:30px;
+}
 #article_populaire{
     width:auto;
-    height:auto;
-    border-radius: 0px; 
+    height:1200px;
+    border-radius: 0px;
+}
+#article_populaire>h2{
+    margin-left:80px;
+    position:relative;
+    bottom:30px;
+    width:800px;
+    justify-content:space-between;
+}
+.photo_populaire{
+    margin:0px;
+    margin-top:30px;
+    margin-left:75px;
 }
 .photo_populaire>a{
     justify-content:left;
     width: 800px;
     height: 300px;
-    margin-top:30px;
     border-radius:40px;
 }
 .photo_populaire a>img{
@@ -778,18 +797,24 @@ form>p>span{
     position:relative;
     bottom:10px;   
 }
+
 /*bloc contenant les images et noms*/
 .photo_activite{
     width:800px !important;
     height:380px !important;
     margin-top:50px!important;
     border-radius:40px;
-    
-    box-shadow:1px 1px 10px rgb(167, 158, 158);
+}
+#activite>h2{
+    position:relative;
+    padding-left:80px;
+    top:30px;
 }
 .photo_activite>a>img{
     width:800px !important;
     height:280px !important;
+    border-top-left-radius:40px;
+    border-top-right-radius:40px;
     
 }
 /*balise contenant les noms des activités*/
