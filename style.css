@@ -75,12 +75,14 @@ h2+p{
     font-size:0.8em;
 }
 
-.menu_header>div:hover{
+.menu_header>div:nth-child(1):defined{
     border-top:2px solid #0065FC;
+}
+.menu_header>div:nth-child(1)>a:defined{
     color:#0065FC;
 }
 .menu_header>div>a:hover{
-    color:#0065FC;
+    color:orangered;
 }
 
 
@@ -174,7 +176,7 @@ input[type="text"]{
 }
 /*style appliqué aux filtres*/
 .categorie_filtre{
-    border:1.8px solid #F2F2F2;
+    border:2px solid #F2F2F2;
     width:150px;
     height:34px;
     margin-right:15px;
@@ -220,6 +222,7 @@ input[type="text"]{
     right:2px;
     bottom:1px;  
 }
+
 /*le formulaire contenant la barre de recherche*/
 form{
     margin-bottom:20px;
@@ -505,7 +508,7 @@ section>p{
         margin:0px;  
     }
     h2{
-        font-size:2.2em;
+        font-size:2.4em;
     }
     header{
         margin-top:20px;
@@ -526,7 +529,7 @@ section>p{
 header>nav{
     border-bottom: 4px solid #F2F2F2;
     flex-direction: column;
-    height:auto;
+    height:160px;
     width: auto;
     justify-content: flex-start;
     align-items: flex-start;
@@ -538,11 +541,11 @@ header>nav{
     flex-direction: column-reverse;
     flex-wrap: wrap;
    width:100%;
-   height:80px;
+   height:84px;
 }
 .menu_header>div:nth-child(1),.menu_header>div:nth-child(2){
     width:470px;
-    height:80px;
+    height:84px;
 }
 .menu_header>div>a{
     padding-top:20px;
@@ -553,6 +556,10 @@ header>nav{
     height:80px;
     bottom:80px;
     right:300px;
+}
+.menu_header>div:nth-child(1):defined{
+    border-top:none;
+    border-bottom:4px solid #0065FC;
 }
 /*titre principale du site*/
 main>h2{
@@ -623,24 +630,24 @@ input::placeholder{
     padding-right:160px;
 
 }
-
+/*paragraphe contenant le mot filtre*/
 .filtre>div>p{
     font-size:1.8em;
     position:relative;
-    left:50px;
+    left:155px;
 }
 .filtre{
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    width:730px;
-    height:450px;
+    width:100%;
+    height:100%;
     margin: auto;
 }
 .categorie_filtre{
     border:3px solid #F2F2F2;
     width:350px;
-    height:150px;
+    height:80px;
     font-size:2.2em;
    /*border:1px solid #707070;*/
     border-radius:50px;
@@ -649,7 +656,7 @@ input::placeholder{
 .categorie_filtre:nth-child(2){
     width:300px;
     position:relative;
-    left:50px;
+    left:150px;
    
    
 }
@@ -658,31 +665,32 @@ input::placeholder{
     width:250px;
     align-self:flex-end;
     position:relative;
-    bottom:93px;
-    right:30px;
+    bottom:85px;
+    right:150px;
 }
 /* new taille du filtre romantique*/
 .categorie_filtre:nth-child(4){
     width:280px;
     position:relative;
     bottom:50px;
-    left:50px;
+    left:150px;
     
 } 
 .categorie_filtre:nth-child(5){
     position:relative;
     bottom:20px;
-    left:50px;
+    left:150px;
 } 
 /* nouveau style appliqué aux icônes contenus dans les filtres*/
 #money,#child,#heart,#dog{
     font-size:1.4em;
-    height: 65px;
-    width: 90px;
+    height: 60px;
+    width: 88px;
     padding-top:20px;
     padding-left: 0px; 
     right:1px;
-    top:0.1px;
+    bottom:0.3px;
+    
 }
 form>p{
     font-size:1.8em;
