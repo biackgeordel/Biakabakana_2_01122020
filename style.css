@@ -185,6 +185,12 @@ input[type="text"]{
     margin-right:15px;
     border-radius:20px;
 }
+
+.categorie_filtre:hover{
+    background-color:#DEEBFF;
+    box-shadow:1px 1px 6px black;
+    border-color:#DEEBFF;
+}
 /*lien contenu dans les filtres*/
 .categorie_filtre>a{
     font-size:0.7em;
@@ -230,17 +236,19 @@ input[type="text"]{
 form{
     margin-bottom:20px;
 }
+
 form>p{
    
-    font-size:0.8em;
+    font-size:0.9em;
     position:relative;
     bottom:10px;
 }
 /*insertion du logo info*/
-form>p::before{
-    content:url("images/logo/info.png");
+form>p>span>img{
     display: inline-block;
+    object-fit: cover;
     position:relative;
+    padding-right:0px;
     top:10px;
 }
 
@@ -696,9 +704,13 @@ form>p{
     margin: auto;
     padding-top:50px;
 }
-form>p>span{
-    position: relative;
-    left:32px;
+form>p>span:nth-child(2){
+   padding-left:50px;
+
+}
+form>p>span>img{
+    width:40px;
+    height:40px;
 }
 .bloc_regroup_hebergement{
     display:flex; 
@@ -758,11 +770,11 @@ article>a{
     border-radius: 0px;
 }
 #article_populaire>h2{
-    margin-left:80px;
+    margin-left:75px;
     position:relative;
     bottom:30px;
     width:800px;
-    justify-content:space-between;
+   justify-content:space-between;
 }
 .photo_populaire{
     margin:0px;
@@ -819,7 +831,7 @@ article>a{
 }
 /*balise contenant les noms des activités*/
 .photo_activite>a>strong{
-   font-size:1.8em;
+   font-size:2em;
    margin-top:30px;
    margin-left:20px;
    
@@ -844,7 +856,7 @@ footer>nav{
 }
 nav>section{
     width:80% !important;
-    font-size:1.8em;
+    font-size:2em;
     margin:auto !important;
 }
 
