@@ -84,7 +84,9 @@ a>strong{
 .menu_header>div:nth-child(1)>a:defined{
     color:#0065FC;
 }
-.menu_header>div>a:hover{
+.menu_header>div:nth-child(1)>a:hover,
+.menu_header>div:nth-child(2)>a:hover,
+.menu_header>div:nth-child(3)>a:hover{
     color:orangered;
 }
 
@@ -504,13 +506,17 @@ section>p{
     font-size: 0.8em;
 }
 
-@media all and (max-device-width:1024px){
+@media all and (orientation:portrait){
 
     #bloc_page{
     width:950px;
+    margin:0px;
     }
     #page_principal{
-       margin:0px; 
+        margin:0px;
+    }
+    body{
+        margin:0px;
     }
     h2{
         font-size:2.4em;
@@ -654,7 +660,6 @@ input::placeholder{
     width:350px;
     height:80px;
     font-size:2.2em;
-   /*border:1px solid #707070;*/
     border-radius:50px;
 }
 /*new taille du filtre economique */
@@ -670,7 +675,7 @@ input::placeholder{
     width:250px;
     align-self:flex-end;
     position:relative;
-    bottom:85px;
+    bottom:88px;
     right:150px;
 }
 /* new taille du filtre romantique*/
@@ -856,7 +861,7 @@ footer>nav{
 }
 nav>section{
     width:80% !important;
-    font-size:2em;
+    font-size:1.6em;
     margin:auto !important;
 }
 
