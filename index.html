@@ -4,7 +4,7 @@
         <meta charset="utf-8"/>
         <link rel="stylesheet" href="fontawesome-free-5.15.1-web/css/all.css"/>
         <link rel="stylesheet" href="style.css"/>
-       <meta name="viewport" content="width=950"/>
+       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title>Reservia</title>
     </head>
     <body>
@@ -14,12 +14,17 @@
              
                 <nav> <!-- menu contenant les ancres vers activites et heberggement-->
                      
-                <div class="logo"> <!--logo de Reservia-->
-                    <img src="images/logo/Reservia.svg" alt="logo du site"/>
+                <div class="menu_header"> <!--logo de Reservia-->
+                   <div class="logo">
+                       <img src="images/logo/Reservia.svg" alt="logo du site"/>
+                    </div>
+                   <div>
+                       <a href="#hebergement">Hébergements</a>
+                    </div>
                 </div>
     
                 <div class="menu_header">
-                        <div><a href="#hebergement">Hébergements</a></div>
+                       
                         <div><a href="#activite">Activités</a></div>
                         <div><a href="#">S'inscrire</a></div>
                 </div>           
@@ -31,48 +36,43 @@
                 <p>En plein centre ville ou en pleine nature</p> 
                  <nav><!-- debut nav contenant  la barre de recherche-->
                      <form action="traitement.php" method="POST">
-                     
-                         <div class="barre_de_recherche"><!-- mise en page de la recherche-->
+                             <!-- mise en page de la recherche-->
+                             <div class="barre_de_recherche">
+                           <i class="fas fa-map-marker-alt" id="marker_desktop"></i> 
                               <input type="text" placeholder="Marseille,france"/>
-                              <i class="fas fa-map-marker-alt" id="marker_desktop"></i>
                               <button id="bouton_desktop">Rechercher</button>
                               <button id="bouton_mobile"><i class="fas fa-search"></i></button>
                           </div>
+                        </form>
                          <div class="filtre">
-                                <div><p>Filtres</p></div>
+                             <p>Filtres</p>
                              <div class="categorie_filtre">
-                                 <a href="#">
-                                      <span> <i class="fas fa-money-bill-wave" id="money"></i></span>
-                                      <span>Économique</span>
-                                </a>
+                                 
+                                      <i class="fas fa-money-bill-wave" id="money"></i>
+                                      <a href="#">Économique</a>
                             </div>
 
                               <div class="categorie_filtre" >
-                                  <a href="#">
-                                        <span><i class="fas fa-child" id="child"></i></span>
-                                        <span>Familial</span>
-                                    </a>
+                                  
+                                        <i class="fas fa-child" id="child"></i>
+                                        <a href="#">Familial</a>    
                              </div>
                               <div class="categorie_filtre">
-                                  <a href="#">
-                                      <span><i class="fas fa-heart" id="heart"></i></span>
-                                      <span>Romantique</span>
-                                    </a>
+                                  
+                                      <i class="fas fa-heart" id="heart"></i>
+                                      <a href="#">Romantique</a>
+                                    
                                 </div>
                              <div class="categorie_filtre">
-                                 <a href="#">
-                                     <span> <i class="fas fa-dog" id="dog"></i></span>
-                                     <span>Animaux autorisés</span>
-                                </a>
-                            </div>    
+                                     <i class="fas fa-dog" id="dog"></i>
+                                   <a href="#">Animaux autorisés</a>    
+                            </div>
+                               
                         </div>
+                 </nav>
                            
-                          <p><span><img src="images/logo/info.png" alt="photo info"/></span> de 500 logements sont disponible dans <span>cette ville</span></p>
-                         
-                     </form>
-                     
-                     
-                 </nav><!--fin du nav conteneant la barre de recherche-->
+                            <p><span><img src="images/logo/info.png" alt="photo info"/></span> de 500 logements sont disponible dans <span>cette ville</span></p>
+                 <!--fin du nav conteneant la barre de recherche-->
                          
                    
                      <div class="bloc_regroup_hebergement">
