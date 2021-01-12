@@ -532,7 +532,7 @@ section>p{
         width:100% !important;
         height:15vw !important;
         padding-top:0 !important;
-        font-size:3.7vw;
+       font-size:5vw !important;
     }
     /*balise div contenant le lien hebergement*/
     .menu_header:nth-child(1)>div:nth-last-child(1){
