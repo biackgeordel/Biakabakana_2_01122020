@@ -27,7 +27,7 @@ strong{
 }
 
 h2{
-    font-size:1.1em;
+    font-size:1.2em;
 }
 a{
     text-decoration: none;
@@ -35,43 +35,199 @@ a{
 }
 /*paragraphe au dessous du titre du site*/
 h2+p{
-    font-size:0.8em;
-    position:relative;
-    bottom:10px;
+    font-size:0.85em;
+   position:relative;
+    bottom:4px;
 }
 a>strong{
     padding-left:10px;
+
+}
+/*balise nav contenant les liens heberegement,activiteset s'inscrire*/
+header>nav{
+    display:flex;
+    height:70px;
+    justify-content: space-between;
 }
 
+/*balise div contenant les div des liens hebergement,activités,s'inscrire*/
+.menu_header{
+    display: flex;
+}
+.menu_header>div>a{
+    font-size:0.8em;
+}
+/*div contenant le logo reservia  et le lien hebergement*/
+.menu_header:nth-child(1){
+    width:75%;
 
+}
+/*div des liens activités et s'inscrire*/
+.menu_header:nth-last-child(1){
+    width:25%;
+}
+/*balise div contenant le logo reservia*/
+.menu_header:nth-child(1)>div:nth-child(1){
+    width:80%;
+    padding-top:4%;
+   
+}
+/*balise div contenant le lien hebergement*/
+.menu_header:nth-child(1)>div:nth-child(2){
+    width:20%;
+    text-align: center;
+    padding-top:4%;
+   
+}
+/*balise div contenant les liens activités et s'inscrire*/
+.menu_header:nth-last-child(1)>div{
+    width:50%;
+    text-align: center;
+    padding-top:12.5%;
+   
+}
+/*balise div contenant le lien hebergement*/
+.menu_header:nth-child(1)>div:nth-last-child(1){
+    border-top:2px solid #0065FC;
+}
+ /*balise div contenant le lien hebergement */
+ .menu_header:nth-child(1)>div:nth-last-child(1)>a{
+    color:#0065FC;
+  }
+
+ /*balise div contenant le lien s'inscrire */
+ .menu_header:nth-child(2)>div:nth-last-child(1)>a{
+    color:#0065FC;
+    font-weight: bold;
+  }
+  .barre_de_recherche{
+      height:60px;
+  }
+
+/*texte dans la balise input*/
 input::placeholder{
     color:black;
     font-family: 'Raleway',sans-serif;
     font-weight: bold;
+    padding-left:10px;
     
 }
 input[type="text"]{
+    display: inline-block;
     outline: none;
+    border:1px solid #F2F2F2;
+    width:260px;
+    height:35px;
 }
+#marker_desktop{
+    display:block;
+    background-color: #F2F2F2;
+    width:40px;
+    float:left;
+    height:29px;
+    border-top-left-radius:10px;
+    border-bottom-left-radius: 10px;
+    padding-top:10px;
+    text-align: center;
 
+}
+#bouton_desktop{
+    outline: none;
+    display:block;
+    width:90px ;
+    height:39px;
+    position:relative;
+    font-size:0.7em;
+    left:225px;
+    bottom:39px;
+    font-weight: bold;
+    border:none;
+    background-color: #0065FC;
+    border-top-right-radius:10px;
+    border-bottom-right-radius:10px;
+    color:white;
   
-/*style appliqué aux icônes contenus dans les filtres*/
-
-
-/*le formulaire contenant la barre de recherche*/
-form{
-    margin-bottom:20px;
-    
 }
+
+#bouton_mobile{
+    display: none;
+}
+.filtre{
+   display: flex;
+   justify-content:flex-start;
+   align-items: center;
+   margin:auto;
+
+}
+
+.filtre>p{
+    font-weight:bold;
+    font-size:0.9em;
+    margin-right:15px;
+}
+
+/*balise  div contenant les filtres*/ 
+.categorie_filtre{
+    display: inline-block;
+    width:165px;
+    height:35px;
+    border:2px solid #F2F2F2;
+    border-left:none;
+  margin-right:15px;
+    border-radius:25px;
+   
+}
+.categorie_filtre:hover{
+    background-color:#DEEBFF;
+    border:2px solid #0065FC;
+}
+/*lien contenant le lien econnmique*/
+.categorie_filtre:nth-child(2){
+    width:125px;
+}
+.categorie_filtre:nth-child(3){
+    width:106px;
+}
+.categorie_filtre:nth-child(4){
+    width:120px;
+}
+
+
+
+/*les icônes contenus dans les filtres*/
+.categorie_filtre>i{
+    background-color:#DEEBFF;
+    float: left;
+    text-align: center;
+    width:35px;
+   font-size:0.9em;
+    height:25px;
+    padding-top:10px;
+    color:#0065FC;
+    border-radius:100%;
+}
+/*les liens contenus dans les filtres*/
+.categorie_filtre>a{
+    display:inline-block;
+   padding-top:10px;
+  font-weight: bold;
+  margin-left:5px;
+  font-size:0.8em;
+}
+
+
 /*insertion du logo info*/
-form>p>span>img{
+nav+p>span>img{
     display: inline-block;
     object-fit: cover;
     position:relative;
     padding-right:0px;
     top:10px;
 }
-
+nav+p{
+    margin-bottom:40px;
+    font-size:0.9em;
+}
 
 #article_hebergement{
     border-radius:20px;
@@ -114,12 +270,12 @@ form>p>span>img{
 /*bloc contenant les photos d'hebergement*/
 .photo_hebergement{
     width:160px;
-    height: 145px;
+    height: 140px;
     background-color:white;
     font-size:0.7em;
     text-align: center;
     margin:13px;
-    box-shadow:0px 0px 8px black;
+    box-shadow: 0px 0px 8px rgba(0,0,0,0.5);
     border-radius:10px;
 
 }
@@ -129,16 +285,16 @@ form>p>span>img{
 }
 
 .etoile_hebergement>span>i:nth-last-child(1){
-    color: #F2F2F2;
+    color: #d9d9d9;
 }
 .etoile_hebergement2>span>i:nth-last-child(1){
-    color: #F2F2F2;
+    color: #d9d9d9;
 }
 .etoile_hebergement1>span>i:nth-last-child(1){
-    color: #F2F2F2;
+    color: #d9d9d9;
 }
 .etoile_hebergement1>span>i:nth-last-child(2){
-    color: #F2F2F2;
+    color: #d9d9d9;
 }
 /*balise h2 au dessus d'hebergement de marseille et populaires*/
 article>h2{
@@ -171,10 +327,10 @@ article>a{
     color:#0065FC;
 }
 .etoile_populaire>i:nth-last-child(1){
-    color: #F2F2F2;
+    color:#d9d9d9;
 }
 .etoile_populaire1>i:nth-last-child(1){
-    color: #F2F2F2;
+    color: #d9d9d9;
 
 }
 
@@ -210,7 +366,7 @@ article>a{
     border-radius:10px;
     margin-bottom:8px;
     background-color:white; 
-    box-shadow: 0px 0px 8px black;
+    box-shadow: 0px 0px 8px rgba(0,0,0,0.5);
 }
 
 #article_populaire{
@@ -328,7 +484,7 @@ section>p{
 @media only screen  and (max-width:768px){
 
     #bloc_page{
-    width:100%;
+    width:auto;
     margin:0px;
     }
     #page_principal{
@@ -349,19 +505,22 @@ section>p{
     header{
         margin-top:5vw;
     }
+    /*balise nav contenant les div des liens hebergement,activités,s'inscrire*/
     header>nav{
         width:100%;
         height:25vw;
         display: flex;
         
     }
+    /*balise div contenant les liens heberegement;activités,s'inscrire*/
     .menu_header{
-        width:50%;
-        height:25vw;
+        width:50% !important;
+        height:25vw !important;
         display: flex;
         flex-direction: column;
         
     }
+    /*logo reservia du site*/
     .logo>img{
         width:87%;
         height:87%;
@@ -370,23 +529,22 @@ section>p{
     }
         
     .menu_header>div{
-        width:100%;
-        height:15vw;
+        width:100% !important;
+        height:15vw !important;
+        padding-top:0 !important;
         font-size:3.7vw;
     }
     /*balise div contenant le lien hebergement*/
     .menu_header:nth-child(1)>div:nth-last-child(1){
         text-align: center;
-        height:10vw;
+        height:10vw !important;
         border-bottom:3px solid  #F2F2F2;
     }
     .menu_header:nth-child(1)>div:nth-last-child(1):defined{
         border-bottom:3px solid #0065FC;
+        border-top: none;
     }
-    .menu_header:nth-child(1)>div:nth-last-child(1)>a:defined{
-       color:#0065FC;
-     }
-    
+   
     /*lien contenant hebergement*/
     .menu_header:nth-child(1)>div:nth-last-child(1)>a{
        position:relative;
@@ -411,7 +569,7 @@ section>p{
     nav>.menu_header:nth-last-child(1)>div:nth-last-child(2){
         order:2;
         text-align: center;
-         height:10vw;
+         height:10vw !important;
          border-bottom:3px solid  #F2F2F2;
     }
     /*lien contenant activité*/
@@ -419,8 +577,6 @@ section>p{
         position:relative;
         top:2vw;
     }
-
-
 
 /*titre principale du site*/
 main>h2{
@@ -433,12 +589,12 @@ main>h2{
    }
 /*paragraph au dessous du titre*/
 main>h2+p{
-    /*height:50px;
-    position:relative;
-    bottom:15px;*/
     font-size:4vw;
     clear:both;
     padding-left:6vw;
+}
+form{
+    width:auto !important;
 }
 .barre_de_recherche{
     display: flex;
@@ -447,10 +603,9 @@ main>h2+p{
     justify-content: space-around;
 }
 .barre_de_recherche>input{
-    display: block;
     width:70vw!important;
     height:12vw!important;
-    border:0.4vw solid #F2F2F2 !important;
+   border:0.4vw solid #F2F2F2 !important;
     border-radius:0 !important;
 }
 #bouton_desktop{
@@ -471,11 +626,8 @@ main>h2+p{
     right:9vw;
 }
 #marker_desktop{
-    display:block;
-    background-color: #F2F2F2;
     width:13vw!important;
-    height:8vw !important;
-    text-align: center;
+   height:8vw !important;
     padding-top:5.3vw;
     border-top-left-radius:4vw;
     border-bottom-left-radius:4vw;
@@ -494,49 +646,51 @@ input::placeholder{
 .filtre{
     width:100%;
     height:100%;
+    display:block !important;
   
 }
 /*balise contenant les liens du filtre*/
 .categorie_filtre{
     display: inline-block;
-    width:60vw;
-    height:12vw;
+    width:60vw !important;
+    height:12vw !important;
     border:2px solid #F2F2F2;
     border-left:none;
-    margin-left:2.5vw;
+    margin-left:2.5vw !important;
+    margin-right: 0px !important;
     border-radius:6vw;
-    margin-bottom:3vw;
+    margin-bottom:3vw !important;
 }
 
 /*lien contenu dans la balise div du filtre*/
 .categorie_filtre>a{
-    display:block;
     font-size:4vw;
-   padding-top:3.5vw;
+   padding-top:3.5vw !important;
     padding-right:6vw;
+    margin-left:0px !important;
     float:right;
-    font-weight: bold;
 }
 .categorie_filtre:nth-child(2)>a{
-    padding-right:8vw;
+    padding-right:8vw !important;
 }
 .categorie_filtre:nth-child(5)>a{
-    padding-right:11vw;
+    padding-right:11vw !important;
 }
 /*paragraphe contenant le mot filtre*/
 .filtre>p{
     font-size:4vw;
     font-weight: bold;
     margin-left:4vw;
+    
 }
 /*icone des filtres*/
 .categorie_filtre>i{
     background-color:#DEEBFF;
-    width:12vw;
-    height:8vw;
+    width:12vw !important;
+    height:8vw !important;
     float: left;
     text-align: center;
-    padding-top:4vw;
+    padding-top:4vw !important;
     font-size:4vw;
     color:#0065FC;
     border-radius:100%;
@@ -544,18 +698,18 @@ input::placeholder{
 /* balise div contenant le lien familial*/
 .categorie_filtre:nth-child(3){
     float:right;
-    margin-right:10vw;
-    width:35vw;
+    margin-right:10vw !important;
+    width:35vw !important;
 }
 /* balise div contenant le lien economique*/
 .categorie_filtre:nth-child(2){
-    width:46vw;
+    width:46vw !important;
     clear:both;
    
 }
 /* balise div contenant le lien romantique */
 .categorie_filtre:nth-child(4){
-    width:43vw;
+    width:43vw !important;
 }
 /*balise contenant 500 logements*/
 nav+p{
@@ -563,6 +717,7 @@ nav+p{
     padding-left:4vw;
     padding-right:4vw;
     margin-bottom:10vw;
+   
 }
 nav+p>span:nth-child(1)>img{
     width:8%;
@@ -571,7 +726,7 @@ nav+p>span:nth-child(1)>img{
     top:2vw;
 }
 nav+p>span:nth-child(2){
-    padding-left:9vw;
+    padding-left:7vw;
 }
 /*balise h2 au dessus des hebergements a marseille*/
 #article_hebergement>h2{
@@ -643,12 +798,14 @@ article>a{
 /*balise h2  au dessus  des logements populaires*/ 
 #article_populaire>h2{
     position:relative;
-    font-weight:5vw;
+    bottom:10vw;
     width:90%;
+    height:100% !important;
     padding-left:0;
-    padding-bottom:10vw !important;
-   justify-content:space-between;
-   margin: auto;
+   padding-bottom:0 !important;
+   margin-left:6vw;
+   justify-content: space-between;
+    margin-bottom:10vw;
 }
 .photo_populaire{
     width:90vw;
@@ -730,7 +887,7 @@ article>a{
     height:auto;
 }
 footer{
-    margin-top:100px;
+    margin-top:10vw;
     width:auto;
 }
 footer>nav{
@@ -745,6 +902,30 @@ nav>section{
 }
 
 }
+@media only screen and (max-width:280px){
+
+  .barre_de_recherche{
+      height:12vw;
+  }
+  .barre_de_recherche{
+      width:auto;
+  }
+    .barre_de_recherche>input{
+        display: block;
+        height:90%!important;
+        width:80% !important;
+    }
+    #marker_desktop{
+        display: block;
+        width:10%;
+       height:84% !important;
+       padding-top:3.5vw !important;
+    }
+   
+
+
+}
+
 
 
 
