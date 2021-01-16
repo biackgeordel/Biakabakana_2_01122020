@@ -1,4 +1,4 @@
-#TRANSFORMEZ UNE MAQUETTE EN SITE WEB
+TRANSFORMEZ UNE MAQUETTE EN SITE WEB
 ***
 Voici les liens vers les livrables du  projet 2:
 
